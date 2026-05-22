@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FFF9EE;
+  --foreground: #1B2A41;
+}
+
+html, body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display { font-family: 'Fredoka', system-ui, sans-serif; }
+.font-body { font-family: 'Nunito', system-ui, sans-serif; }
+
+.bg-dots {
+  background-image: radial-gradient(circle at 1px 1px, rgba(27, 42, 65, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.squiggle {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12'><path d='M0 6 Q15 0 30 6 T60 6 T90 6 T120 6' stroke='%23FFC940' stroke-width='4' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100% 10px;
+  padding-bottom: 12px;
+}
+
+html { scroll-behavior: smooth; }
+
+:focus-visible {
+  outline: 3px solid #FFC940;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+}
