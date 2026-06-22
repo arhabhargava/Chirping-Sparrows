@@ -51,7 +51,7 @@ export default function Events() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Events"
-          title="A few of our favorite memories"
+          title="A few of our favourite memories"
         />
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {events.map((e) => (

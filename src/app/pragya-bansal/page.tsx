@@ -22,7 +22,7 @@ export default function Pragya() {
               every classroom keeps wonder at its center.
             </p>
             <p className="mt-3 text-ink-700 leading-relaxed">
-              Her favorite part of the day? The 9:30 morning circle, when
+              Her favourite part of the day? The 9:30 morning circle, when
               every child gets to share something they noticed on the way
               to school.
             </p>

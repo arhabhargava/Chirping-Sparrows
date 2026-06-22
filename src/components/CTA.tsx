@@ -9,7 +9,8 @@ export default function CTA() {
           <div className="absolute -top-10 -left-10 text-9xl opacity-20">★</div>
           <div className="absolute -bottom-12 -right-8 text-9xl opacity-20">♥</div>
           <h2 className="relative font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink-900 leading-tight">
-            Ready to see Chirping Sparrows
+            Ready to see Chirping Sparrows 
+            
             <br className="hidden sm:block" />
             for yourself?
           </h2>
@@ -29,6 +30,12 @@ export default function CTA() {
               className="px-6 py-3 rounded-full bg-white text-ink-900 font-semibold hover:bg-cream transition"
             >
               Call {SITE.phones[0]}
+            </a>
+            <a
+              href={`tel:${SITE.phones[1].replace(/\s/g, "")}`}
+              className="px-6 py-3 rounded-full bg-white text-ink-900 font-semibold hover:bg-cream transition"
+            >
+              Call {SITE.phones[1]}
             </a>
           </div>
         </div>

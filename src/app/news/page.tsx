@@ -1,5 +1,6 @@
 import PageHeader from "@/components/PageHeader";
 import Events from "@/components/Events";
+import NewsItems from "@/components/NewsItems";
 
 export const metadata = {
   title: "News & Events — Chirping Sparrows",
@@ -14,6 +15,7 @@ export default function News() {
         title="What's happening at school"
         subtitle="A running thread of our annual days, performances, and the moments we cherish."
       />
+      <NewsItems />
       <Events />
     </>
   );

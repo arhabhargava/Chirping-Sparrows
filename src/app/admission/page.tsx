@@ -1,4 +1,5 @@
 import PageHeader from "@/components/PageHeader";
+import AdmissionForm from "@/components/AdmissionForm";
 import { SITE } from "@/lib/site";
 
 export const metadata = {
@@ -48,85 +49,7 @@ export default function Admission() {
             <p className="mt-2 text-ink-500">
               Fill the form below and we&apos;ll get back to you within a working day.
             </p>
-            <form
-              className="mt-6 grid sm:grid-cols-2 gap-4"
-              action={`mailto:${SITE.email}`}
-              method="post"
-              encType="text/plain"
-            >
-              <label className="text-sm">
-                <span className="font-display font-semibold text-ink-900">Parent name *</span>
-                <input
-                  required
-                  name="parent"
-                  type="text"
-                  className="mt-1 w-full rounded-2xl border border-ink-700/15 px-4 py-3 focus:border-blush-400"
-                />
-              </label>
-              <label className="text-sm">
-                <span className="font-display font-semibold text-ink-900">Child name *</span>
-                <input
-                  required
-                  name="child"
-                  type="text"
-                  className="mt-1 w-full rounded-2xl border border-ink-700/15 px-4 py-3 focus:border-blush-400"
-                />
-              </label>
-              <label className="text-sm">
-                <span className="font-display font-semibold text-ink-900">Email *</span>
-                <input
-                  required
-                  name="email"
-                  type="email"
-                  className="mt-1 w-full rounded-2xl border border-ink-700/15 px-4 py-3 focus:border-blush-400"
-                />
-              </label>
-              <label className="text-sm">
-                <span className="font-display font-semibold text-ink-900">Mobile *</span>
-                <input
-                  required
-                  name="phone"
-                  type="tel"
-                  className="mt-1 w-full rounded-2xl border border-ink-700/15 px-4 py-3 focus:border-blush-400"
-                />
-              </label>
-              <label className="text-sm">
-                <span className="font-display font-semibold text-ink-900">Child&apos;s age *</span>
-                <input
-                  required
-                  name="age"
-                  type="text"
-                  className="mt-1 w-full rounded-2xl border border-ink-700/15 px-4 py-3 focus:border-blush-400"
-                />
-              </label>
-              <label className="text-sm">
-                <span className="font-display font-semibold text-ink-900">Program</span>
-                <select
-                  name="program"
-                  className="mt-1 w-full rounded-2xl border border-ink-700/15 px-4 py-3 bg-white focus:border-blush-400"
-                >
-                  <option>Play Group</option>
-                  <option>Pre Nursery</option>
-                  <option>Nursery</option>
-                  <option>KG</option>
-                  <option>Day Care</option>
-                </select>
-              </label>
-              <label className="sm:col-span-2 text-sm">
-                <span className="font-display font-semibold text-ink-900">Message</span>
-                <textarea
-                  name="message"
-                  rows={4}
-                  className="mt-1 w-full rounded-2xl border border-ink-700/15 px-4 py-3 focus:border-blush-400"
-                />
-              </label>
-              <button
-                type="submit"
-                className="sm:col-span-2 mt-2 px-6 py-3 rounded-full bg-blush-500 text-white font-semibold hover:bg-blush-400 transition shadow-pop"
-              >
-                Send enquiry
-              </button>
-            </form>
+            <AdmissionForm />
             <p className="mt-4 text-xs text-ink-500">
               Or call us directly: {SITE.phones.join(" / ")}
             </p>

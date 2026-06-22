@@ -64,6 +64,15 @@ const PATHS = [
   "/images/gallery/9.jpg",
   "/images/gallery/10.jpg",
   "/images/gallery/11.jpg",
+
+  // News
+  "/images/chirpingsparrow.images.png",
+  "/images/kiya.jpeg",
+  "/new-branch-gaur-city2.png",
+  "/branchJ-83P.png",
+  "/new-branch.png",
+  "/images/news1.jpg",
+  "/images/news2.jpg",
 ];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
